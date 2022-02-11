@@ -6,6 +6,7 @@ function $$(str) {
 }
 function updateNode(inputNode, addNode, k = 1) {
 	let inputValue = parseFloat(inputNode.value);
+	if (inputValue < 0) return false;
 	let currentValue = parseFloat(addNode.innerText.substr(1));
 	currentValue = currentValue + k * inputValue;
 	if (currentValue < 0 || isNaN(inputValue)) return false;
