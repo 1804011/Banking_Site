@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+header {
+	margin-top: 56px;
+	text-align: center;
+}
+header h1 {
+	font-size: 36px;
+	color: tomato;
+}
+header h1 p {
+	color: rgba(23, 230, 0, 0.25);
+}
+header h1 span {
+	color: indigo;
+	/* color: violet; */
+	font-size: 48px;
+}
+main .display {
+	width: 75vw;
+	margin: 76px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+main .display div {
+	background-color: rgba(0, 255, 0, 0.15);
+	padding: 48px 24px;
+	border-radius: 8px;
+}
+main .display div:first-child {
+	background-color: rgba(255, 0, 0, 0.15);
+}
+main .display div:last-child {
+	background-color: rgba(0, 0, 255, 0.15);
+}
+main .display div span:first-child {
+	font-size: 30px;
+	display: block;
+	font-weight: 600;
+	color: rgba(255, 25, 60, 0.6);
+	padding-bottom: 6px;
+}
+main .display div span:last-child {
+	color: indigo;
+	font-size: 36px;
+	font-weight: 700;
+}
+main #action {
+	width: 75vw;
+	margin: 48px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 16px;
+}
+main #action > div {
+	background-color: rgba(200, 80, 0, 0.35);
+	padding: 36px 24px;
+	border-radius: 8px;
+}
+main #action > div:last-child {
+	background-color: rgba(231, 89, 9, 0.4);
+}
+main #action > div h3 {
+	font-size: 28px;
+	color: indianred;
+	margin-bottom: 12px;
+}
+main #action > div input {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	padding: 8px 8px;
+	border-radius: 4px;
+	background-color: transparent;
+	font-weight: bold;
+	color: tomato;
+}
+main #action > div button {
+	margin: 8px;
+	background-color: transparent;
+	border: 2px solid black;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-weight: 600;
+}
+::placeholder {
+	color: tomato;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+@media only screen and (max-width: 768px) {
+	header {
+		width: 100vw;
+	}
+	header h1 {
+		font-size: 24px;
+		line-height: 36px;
+	}
+	header h1 span {
+		font-size: 36px;
+		margin-top: 16px;
+	}
+	main .display,
+	main #action {
+		width: 80vw;
+		grid-template-columns: 1fr;
+		grid-gap: 16px;
+	}
+	main .display div span:first-child {
+		font-size: 24px;
+	}
+	main .display div span:last-child {
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Banking Action</title>
+		<link rel="stylesheet" href="banking.css" />
+	</head>
+	<body>
+		<header>
+			<h1>
+				<p>Royal Bank Limited</p>
+				Please Deposit & Withdraw
+				<span>Moooney</span>
+			</h1>
+		</header>
+		<main>
+			<section class="display">
+				<div id="deposit">
+					<span>Amount of Deposit</span>
+					<span>$ 00</span>
+				</div>
+				<div id="withdraw">
+					<span>Amount of Withdraw</span>
+					<span>$ 00</span>
+				</div>
+				<div id="balance">
+					<span>Amount of Balance</span>
+					<span>$ 100</span>
+				</div>
+			</section>
+			<section class="add-withdraw">
+				<div id="action">
+					<div class="add-deposit">
+						<h3>Please Deposit</h3>
+						<input
+							type="number"
+							name="add-deposit"
+							min="0"
+							id="add-deposit"
+							placeholder="Enter Amout of deposit"
+						/>
+						<br />
+						<button id="deposit-btn">Add</button>
+					</div>
+					<div class="withdraw-balance">
+						<h3>Please Withdraw</h3>
+						<input
+							type="number"
+							min="0"
+							name="add-deposit"
+							id="withdraw-amount"
+							placeholder="Enter amount of withdraw"
+						/>
+						<br />
+						<button id="withdraw-btn">Withdraw</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="banking.js"></script>
+	</body>
+</html>

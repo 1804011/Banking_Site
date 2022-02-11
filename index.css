@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+	color: indigo;
+	font-size: 28px;
+	margin: 48px 0;
+}
+h1 span {
+	display: block;
+}
+h1 .sp2 {
+	font-size: 36px;
+	color: tomato;
+	word-spacing: 4px;
+}
+main #log-in {
+	margin: 0 auto;
+	width: 50vw;
+	background-color: rgba(255, 0, 0, 0.1);
+	border-radius: 8px;
+}
+main #log-in .container {
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 64px 0;
+}
+main #log-in .container input {
+	padding: 8px 8px;
+	border-radius: 3px;
+	margin-bottom: 8px;
+	border: 2px solid rgba(255, 78, 90, 0.4);
+	font-weight: 600;
+	width: 80%;
+	color: black;
+}
+main #log-in .container button#submit {
+	padding: 4px 8px;
+	font-weight: 600;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 2px solid rgba(255, 0, 0, 0.4);
+	margin-top: 6px;
+	cursor: pointer;
+}
+
+::placeholder {
+	color: rgba(255, 0, 0, 0.4);
+}
+main #log-in .container button#submit:disabled {
+	border-color: solid rgba(0, 0, 0, 0.1);
+}
